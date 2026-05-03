@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Проверка документа по QR-коду</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, Arial, sans-serif;
+        background: #f5f6f7;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Верхний логотип слева */
+    .header {
+        padding: 30px 0;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        background: white;
+    }
+
+    .main {
+        flex: 1;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .content {
+        background: #fff;
+        padding: 24px;
+        border-radius: 15px;
+        max-width: 1180px;
+        width: 100%;
+    }
+
+    .xslt_11857s {
+        font-family: Open Sans, sans-serif;
+        line-height: 24px;
+        font-size: 15px;
+        color: #333;
+    }
+
+    .xslt_11857s .xslt_text_bold {
+        font-weight: bold;
+    }
+
+    .xslt_11857s .xslt_section:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    /* Футер */
+    .desktop-footer-wrapper {
+        position: relative;
+        width: 100%;
+        background: white; /* белая полоса на всю ширину */
+    }
+
+    .desktop-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        max-width: 1180px;
+        width: 90%;
+        margin: 0 auto;
+        gap: 16px;
+        position: relative; /* чтобы быть выше белой полосы */
+        z-index: 1;
+    }
+
+    .desktop-footer-left,
+    .desktop-footer-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .desktop-footer-icons {
+        flex-wrap: wrap;
+        gap: 16px; /* промежутки между блоками кроме четвертого логотипа */
+    }
+
+    .dit-group {
+        display: flex;
+        align-items: center;
+        gap: 12px; /* между DIT и текстом */
+	margin-left: 16px;
+    }
+
+    .desktop-footer-text {
+        color: #696969;
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 150px;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .ml-4 {
+        margin-left: 4px; /* для четвертого логотипа */
+    }
+
+    img {
+        user-select: none;
+    }
+</style>
+</head>
+
+<body>
+<div class="layout">
+
+    <!-- Верхний логотип слева -->
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/cheesemars/logos/main/emias.png" height="60" alt="Логотип">
+    </div>
+
+    <!-- Основной блок -->
+    <div class="main">
+        <div class="content">
+
+            <div class="xslt_11857s">
+
+                <div class="xslt_section">
+                    <div class="xslt_text_bold">Наименование</div>
+                    <div>Справка о временной нетрудоспособности студента, учащегося техникума, профессионально-технического училища, о болезни, карантине и прочих причинах отсутствия ребенка, посещающего школу, детское дошкольное учреждение</div>
+                </div>
+
+                <div class="xslt_section">
+                    <div class="xslt_text_bold">Пациент</div>
+                    <div>Георгий Дмитриевич К..</div>
+                </div>
+
+                <div class="xslt_section">
+                    <div class="xslt_text_bold">Наименование медицинской организации</div>
+                    <div>ГП 214 ф 2 (ГП 54)</div>
+                </div>
+
+                <div class="xslt_section">
+                    <div class="xslt_text_bold">Дата оформления</div>
+                    <div>2026-19-03</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Нижняя панель с белой полосой на всю ширину -->
+    <div class="desktop-footer-wrapper">
+
+        <div class="desktop-footer">
+
+            <!-- Левый логотип -->
+            <div class="desktop-footer-left">
+                <img src="emias.png" height="64" alt="Логотип">
+            </div>
+
+            <div class="desktop-footer-icons">
+
+                <img src="mosru.png" height="90" alt="Логотип">
+
+                <!-- Группа: DIT + текст -->
+                <div class="dit-group">
+                    <img src="dit.png" height="65" alt="Логотип">
+                    <span class="desktop-footer-text">Департамент информационных технологий</span>
+                </div>
+
+                <img src="mosgorzdrav-logo.png"
+                     class="ml-4 desktop-footer-icon" height="70" alt="Логотип">
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
